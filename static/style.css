@@ -1,23 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-html, body{
+html,
+body {
     font-family: Ubuntu, Arial;
     width: 100%;
     height: 100%;
+    scroll-behavior: smooth;
 }
-*::-webkit-scrollbar{
+
+*::-webkit-scrollbar {
     width: 10px;
 }
-*::-webkit-scrollbar-track{
+
+*::-webkit-scrollbar-track {
     width: 12px;
     box-shadow: inset 0 0 .3rem #00000050;
     background-color: #fff;
 }
-*::-webkit-scrollbar-thumb{
+
+*::-webkit-scrollbar-thumb {
     background-color: #021124;
 }
 
-#header{
+#header {
     position: fixed;
     top: 0;
     left: 0;
@@ -29,14 +34,16 @@ html, body{
     padding: 0 15px;
     z-index: 2;
 }
-#header .profile img{
+
+#header .profile img {
     margin: 15px auto;
     display: block;
     width: 120px;
     border: 8px solid #2c2f3f;
     border-radius: 50%;
 }
-#header .profile h1{
+
+#header .profile h1 {
     font-size: 24px;
     margin: 0;
     padding: 0;
@@ -44,7 +51,8 @@ html, body{
     text-align: center;
     color: #fff;
 }
-#header .profile .social-links a{
+
+#header .profile .social-links a {
     font-size: 1rem;
     background: #212431;
     color: #fff;
@@ -54,42 +62,51 @@ html, body{
     transition: 0.3s;
     text-decoration: none;
 }
-#header .profile .social-links a:hover{
+
+#header .profile .social-links a:hover {
     background: #149ddd;
 }
-.nav-menu{
+
+.nav-menu {
     padding: 1.5rem;
 }
-.nav-menu a, .nav-menu a:focus{
+
+.nav-menu a,
+.nav-menu a:focus {
     display: flex;
     align-items: center;
     color: #a8a9b4;
     transition: 0.3s;
     font-size: 15px;
 }
+
 .nav-menu a i,
-.nav-menu a:focus i{
+.nav-menu a:focus i {
     font-size: 24px;
     padding-right: 0.8rem;
     color: #6f7180;
 }
+
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
-.nav-menu li:hover > a{
+.nav-menu li:hover>a {
     text-decoration: none;
     color: #fff;
 }
+
 .nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
-.nav-menu li:hover > a i {
+.nav-menu li:hover>a i {
     color: #149ddd;
 }
-#main{
+
+#main {
     margin-left: 300px;
 }
-section#inicio{
+
+section#inicio {
     background-image: url(./img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -98,24 +115,30 @@ section#inicio{
     width: 100%;
     height: 100vh;
 }
-section#inicio h2{
+
+section#inicio h2 {
     font-size: 3.2rem;
 }
-section#inicio span#subtitle{
+
+section#inicio span#subtitle {
     margin-right: 2rem;
     font-size: 1.5rem;
 }
-.text-shadow{
+
+.text-shadow {
     text-shadow: 4px 4px 10px #000000;
 }
-section#inicio div#arraste{
+
+section#inicio div#arraste {
     width: 9rem;
 }
-section#inicio div#arraste a{
+
+section#inicio div#arraste a {
     text-decoration: none;
     color: #fff;
 }
-i.menu-mobile{
+
+i.menu-mobile {
     position: fixed;
     color: #fff;
     background-color: #0F1015;
@@ -131,27 +154,38 @@ i.menu-mobile{
     justify-content: center;
     align-items: center;
 }
-.menu-nav-active{
+
+.menu-nav-active {
     overflow: hidden;
 }
-.menu-nav-active #header{
+
+.menu-nav-active #header {
     left: 0;
 }
-@media (max-width: 1024px){
-    #header{
+
+@media (max-width: 1024px) {
+    #header {
         left: -300px;
     }
-    #main{
+
+    #main {
         margin-left: 0;
     }
-    i.menu-mobile{
+
+    i.menu-mobile {
         display: flex;
     }
-    section#inicio h2{
+
+    section#inicio h2 {
         font-size: 3.5rem;
     }
-    section#inicio span#subtitle{
+
+    section#inicio span#subtitle {
         margin-right: 0;
         font-size: 1rem;
     }
+}
+
+.section-bg {
+    background-color: #eff5ff;
 }
