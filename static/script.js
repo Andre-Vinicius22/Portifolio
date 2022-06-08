@@ -29,7 +29,7 @@ navItem.forEach((item) => {
 const item = document.querySelectorAll("[data-anime]");
 
 const animeScroll = () => {
-    // identificando topo da tela
+    // identificando topo da tela e realizando calculo para renderizar a animacao
     const windowTop = window.pageYOffset + window.innerHeight * 0.85;
 
     // varrendo array "item", verificando se o elemento esta no topo da tela
