@@ -11,7 +11,6 @@ menuMobile.addEventListener('click', () => {
 })
 
 // fechar menu quando clicar em alguma section e troca icone para list
-
 const navItem = document.querySelectorAll(".nav-item")
 
 navItem.forEach((item) => {
@@ -22,6 +21,22 @@ navItem.forEach((item) => {
         }
     })
 })
+
+// troca a class active dos elementos html
+const navLink = document.querySelectorAll('.nav-link')
+
+navLink.forEach((element) => {
+    element.addEventListener('click', () => {
+        // limpando active de todos os elementos assim que entra no eventListener
+        navLink.forEach((e) => {
+            e.classList.remove('active')
+        })
+        if (!element.classList.contains('active')) {
+            element.classList.add('active')
+        }
+    })
+})
+
 // animando todos os items que possuirem o atributo "data-anime"
 // criando array de items
 const item = document.querySelectorAll("[data-anime]");
@@ -39,7 +54,6 @@ const animeScroll = () => {
             Element.classList.remove("animate");
         }
     });
-
 }
 
 animeScroll()
