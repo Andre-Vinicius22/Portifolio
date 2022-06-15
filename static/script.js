@@ -22,9 +22,7 @@ navItem.forEach((item) => {
         }
     })
 })
-
 // animando todos os items que possuirem o atributo "data-anime"
-
 // criando array de items
 const item = document.querySelectorAll("[data-anime]");
 
