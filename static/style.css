@@ -28,6 +28,7 @@ body {
     left: 0;
     bottom: 0;
     background: #021124;
+    box-shadow: 2px 1px 5px rgb(143, 143, 143);
     overflow-y: auto;
     width: 300px;
     transition: all ease-in-out 0.5s;
@@ -138,10 +139,19 @@ section#inicio div#arraste a {
     color: #fff;
 }
 
+#habilities {
+    background-color: #021124;
+    color: #fff;
+}
+
 .tecnologies {
     font-size: 20px;
     font-weight: bold;
-    font-family: cursive;
+}
+.TecnologyItem {
+    display: flex;
+    justify-content: first baseline;
+    align-items: baseline;
 }
 
 i.menu-mobile {
